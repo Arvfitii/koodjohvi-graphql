@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+
+body {
+    background-color: #030637;
+    font-family: 'Ubuntu', sans-serif;
+    color: #FFF8E3;
+}
+
+h1 {
+    
+    text-align: center;
+    font-size: 4em;
+}
+
+.loginfo{
+    text-align: center;
+}
+
+.loginfo *{
+    text-align: center;
+    font-size: 1em;
+}
+
+.loginfo input, button {
+    border-radius: 10px;
+    background-color: #030637;
+    color: #FFF8E3;
+    padding: 6px;
+}
+
+.userinfo {
+    text-align: center;
+    font-size: 1.5em;
+    color: #F3D7CA;
+}
+.auditbox *{
+    margin-bottom: 0;
+}
+.secondary {
+    font-size: 0.7em;
+    margin: 0px;
+}
+
+.userinfo span {
+    color: #E6A4B4;
+}
+
+.graph {
+    display: inline-block;
+    text-align: center;
+    display: table-cell;
+}
+
+.graph svg {
+    background-color: #05073b;
+}
+
+.graphs {
+    margin-top: 8em;
+width: 100%;
+    display: table;
+}

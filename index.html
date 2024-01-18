@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body onLoad="onLoad()">
+    <section id="login">
+        <h1>Sign in to Intra</h1>
+        <div class="loginfo">
+            <p id="loginError"></p>
+            <input type="text" id="username" placeholder="Username"></input><br>
+            <input type="password" id="password" placeholder="Password"><br>
+            <button onClick="login()">Sign in</button>
+        </div>
+
+    </section>
+    <section id="main" style="display: none;">
+        <button onClick="logOut()">Log Out</button>
+        <h1>Welcome <span id="displayUser"></span></h1>
+        <div class="userinfo">
+            <p>XP: <span id="xp"></span></p>
+            <div class="auditbox">
+                <p>Audit ratio: <span id="auditratio"></span></p>
+                <p class="secondary">Done: <span id="auditdone"></span></p>
+                <p class="secondary">Recieved: <span id="auditrecieved"></span></p>
+            </div>
+        </div>
+        <div class="graphs">
+            <div class="graph">
+                <h2>XP over time</h2>
+                <svg id="xpGraph" width="480" height="240"></svg>
+            </div>
+            <div class="graph">
+                <h2>Audit ratio over time</h2>
+                <svg id="auditGraph" width="480" height="240"></svg>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
