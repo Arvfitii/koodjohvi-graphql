@@ -13,7 +13,7 @@ function login() {
 
     let http = new XMLHttpRequest();
     http.open('POST', url, true); // Replace the URL with your own
-    http.setRequestHeader('Authorization', 'Basic ' + btoa(username + ":" + password));
+    http.setRequestHeader('Authorization', 'Basic ' +  btoa(unescape(encodeURIComponent(username + ":" + password))));
     http.onreadystatechange = function () {//Call a function when the state changes.
         if (http.readyState == 4) {
             let res = JSON.parse(http.responseText);
